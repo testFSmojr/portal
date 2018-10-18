@@ -29,7 +29,7 @@ else {
       </th>
       <td>
       <?php
-      print $host;
+      //print $host;
         ?>
       </td>
       <td>Verde</td>
