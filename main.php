@@ -13,16 +13,26 @@
         
       <th scope="row">
         <?php
-require_once('asset/Ping.php');
-$host = 'www.google.com';
-$ping = new Ping($host);
-$latency = $ping->ping();
-if ($latency) {
-  print 'Latency is ' . $latency . ' ms';
-}
-else {
-  print 'Host could not be reached.';
-}
+      $host = "138.255.116.90";
+        $services = "test";
+          $status = "1"; 
+          
+$counter = $count +1 ;
+	 $num0 = 0 ; 
+			$num = $num0 +1 ;
+	  $pingreply = exec("ping -n $value");
+	  if ( substr($pingreply, -2) == 'ms')
+  		{
+			
+		echo "Reply Speed ";
+		    echo substr($pingreply, -13);
+		}
+	  else 
+		{
+			#echo "<td width=60><strong><font color='#990000'>DOWN</font></strong></td>";
+			
+			echo "Timeout...";
+		}
 
       ?>
          
