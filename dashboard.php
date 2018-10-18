@@ -48,7 +48,29 @@
         <div class="col-lg-12 text-center">
           <h1 class="mt-5"><img src="img/logo.png" alt="Logo Convergia" align="middle" /></h1>
           <p class="lead">Aplicacion de Monitor Mobile</p>
-        <table class="table table-hover">
+        <?php 
+			if (!$_GET['p']){
+				require "main.php";
+			}elseif($_GET['p']=="Settings"){
+				require "settings.php";
+			}elseif($_GET['p']=="Statistics"){
+				require "stats.php";
+			}elseif($_GET['p']=="Clients"){
+				require "clients.php";
+			}elseif($_GET['p']=="Trunk"){
+				require "trunk.php";
+			}elseif($_GET['p']=="Update"){
+				require "update.php";
+			}elseif($_GET['p']=="Backup"){
+				require "backup.php";	
+			}elseif($_GET['p']=="Help"){
+				require "help.php";	
+			}elseif($_GET['p']=="Received"){
+				require "received.php";	
+			}	
+		?>
+          
+          <table class="table table-hover">
   <thead>
     <tr>
       <th scope="col">IP </th>
