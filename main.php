@@ -1,8 +1,3 @@
-<?php
-include_once('asset/Ping.php');
-use asset\Ping as Ping;
-
-?>  
 <table class="table table-hover">
   <thead>
     <tr>
@@ -18,7 +13,7 @@ use asset\Ping as Ping;
         
       <th scope="row">
         <?php
-
+require_once('asset/Ping.php');
 $host = 'www.google.com';
 $ping = new Ping($host);
 $latency = $ping->ping();
