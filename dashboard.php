@@ -1,8 +1,3 @@
-<?php
-include_once('asset/Ping.php');
-use asset\Ping as Ping;
-
-?> 
 <html>
   <head>
     <meta charset="utf-8">
